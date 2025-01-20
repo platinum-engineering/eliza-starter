@@ -58,4 +58,4 @@ COPY --from=builder /app/pnpm-lock.yaml /app/
 
 EXPOSE 3000
 # Set the command to run the application
-CMD ["pnpm", "start", "--characters='characters/character.json'", "--non-interactive"]
+CMD ["pnpm", "start", "--characters='characters/crypto.character.json'", "--non-interactive"]
