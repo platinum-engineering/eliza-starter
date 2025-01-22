@@ -100,7 +100,8 @@ const currentNewsAction: Action = {
         text: responseText,
         action: "CURRENT_NEWS_RESPONSE",
         source: _message.content?.source
-      } as Content
+      } as Content,
+      embedding: new Array(384)
     }
 
     await _runtime.messageManager.createMemory(newMemory);
